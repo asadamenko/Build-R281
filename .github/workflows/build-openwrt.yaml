@@ -26,6 +26,15 @@ on:
           - openwrt-25.12
           - openwrt-24.10
           - openwrt-23.05
+      tag:
+        description: "Source Tag"
+        type: choice
+        required: true
+        default: v24.10.6
+        options:
+          - v24.10.5
+          - v24.10.6
+          - v24.10.7
       config_file:
         description: "Configuration File"
         type: choice
